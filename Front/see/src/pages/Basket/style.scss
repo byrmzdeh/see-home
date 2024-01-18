@@ -1,0 +1,20 @@
+.basket{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    table{
+        margin-top: 60px;
+        width: 75%;
+        td{
+            text-align: center;
+            i{
+                cursor: pointer;
+            }
+            .remove{
+                color: rgb(201, 25, 25);
+                font-size: 23px
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.add{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            width: 430px;
+            height: 40px;
+            border: 1px solid #f89d13;
+        }
+        button{
+            width: 150px;
+            height: 45px;
+            color: white;
+            background-color: #f89d13;
+            border: 1px solid #f89d13;
+            font-weight: bold;
+            transition: 0.5s;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+                color: #f89d13;
+            }
+        }
+    }
+    table{
+        width: 70%;
+        td{
+            text-align: center;
+            button{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background-color: rgb(189, 31, 31);
+                color: white;
+                font-weight: bolder;
+                border: none;
+            }
+        }
+    }
+}

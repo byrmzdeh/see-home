@@ -1,0 +1,142 @@
+ 
+.navbar{
+    .nav {
+        max-width: 100%;
+        height: 8vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .see {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            .kvadrat {
+                margin-top: 23px;
+                width: 10px;
+                height: 10px;
+                background-color: #f16821;
+                font-weight: bold;
+
+            }
+        }
+
+        ul {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                a {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                .active {
+                    color: #f16821;
+                }
+            }
+        }
+    }
+
+    .bars {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width:700px) {
+    .navbar {
+        .nav {
+            display: none;
+        }
+
+        .bars {
+            display: block;
+            max-width: 100%;
+            min-height: 10vh;
+            i{
+                cursor: pointer;
+            }
+           
+
+            .menu{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 20px 30px;
+                .see {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 7px;
+    
+                    h2 {
+                        font-size: 40px;
+                    }
+    
+                    .kvadrat {
+                        margin-top: 23px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #f16821;
+                        font-weight: bold;
+    
+                    }
+                }
+                i{
+                    font-size: 27px;
+                }
+            }
+
+            .click{
+                opacity: 0;
+                height: 0;
+                width: 100%;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                transition: all 0.5s;
+                padding: 10px;
+                overflow: hidden;
+                background-color: white;
+                ul {
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 13px;
+                    padding: 12px 23px;
+        
+                    li {
+                        a {
+                            color: black;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+        
+                        .active {
+                            color: #f16821;
+                        }
+                    }
+                }
+            }
+            .open{
+                opacity: 1;
+                height: 150px;
+            }
+
+        }
+    }
+}
+

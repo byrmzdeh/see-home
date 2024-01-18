@@ -1,0 +1,39 @@
+.wishlist{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    gap: 60px;
+   margin: 60px auto;
+    .card{
+        width: 400px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    
+
+      button{
+       
+            // cursor: pointer;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            transition: 0.5s;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                background-color: #fff;
+                color: black;
+                border: 1px solid black;
+            }
+        }
+
+
+      }
+    
+}
